@@ -2,7 +2,7 @@
 FROM node:8
 
 # Create app directory
-WORKDIR /Users/Jo/Desktop/eko
+WORKDIR /home/ab01
 
 COPY package*.json ./
 
@@ -11,7 +11,7 @@ RUN npm install
 COPY . .
 
 # set ENV variable for mongo
-ENV MONGODB_ADDON_URI=mongodb://192.168.1.130:27017/test
+ENV MONGODB_ADDON_URI=mongodb://eko-mongo:27017/test
 
 EXPOSE 3000
 
