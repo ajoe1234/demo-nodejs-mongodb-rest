@@ -11,7 +11,7 @@ RUN npm install
 COPY . .
 
 # set ENV variable for mongo
-ENV MONGODB_ADDON_URI=mongodb://128.199.200.22:28001/test
+ENV MONGODB_ADDON_URI=mongodb://128.199.200.22:27017/test
 
 EXPOSE 3000
 
